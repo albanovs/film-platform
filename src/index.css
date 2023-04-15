@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(25, 26, 28);
+    /* background-image: url(./fim-covers/infinityVar.jpg);
+    background-size: cover; */
+}
+
+.App{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.secondary-text {
+    color: rgb(83, 83, 83);
+}
