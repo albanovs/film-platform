@@ -21,5 +21,6 @@
 @media (max-width:420px) {
     .header{
         padding: 0 15px;
+        background-color: rgb(70, 20, 44);
     }
 }
