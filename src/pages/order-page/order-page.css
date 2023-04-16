@@ -12,8 +12,6 @@
 
 .order-item__title {
     margin-left: 100px;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 .order-item__price {
@@ -68,12 +66,38 @@
 }
 
 @media (max-width: 420px) {
-    .order-item{
+    .order-page {
+        margin: 0 15px;
+    }
+    
+    .order-item__title {
+        width: 200px;
+        margin-right: 70px;
+        margin-left: 5px;
+    }
+    .order-item__image{
+        width: 150px;
+    }
+    .order-item__cover{
+        margin-right: 5px;
+    }
+    .film__title{
+        font-size: 12px;
+    }
+    .order-item__description-title{
+        font-size: 10px;
+    }
+    .order-item__description{
+        font-size: 10px;
+    }
+    .none {
+        display: none;
+    }
+    .order-item__price{
+        font-size: 10px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-    }
-    .order-item__title {
-        margin-left: 0;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 }

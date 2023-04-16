@@ -17,13 +17,13 @@ export const OrderItem = ({ film }) => {
                 <img className='order-item__image' src={film.image} alt="" />
             </div>
             <div className='order-item__title'>
-                <span class>{film.title}</span>
+                <span className='film__title'>{film.title}</span>
                 <div>
                     <span className='order-item__description-title'>Жанр: </span>
                     <span className='order-item__description'>{film.genres}</span>
                 </div>
-                <h1 className='order-item__description-title'>Описание:</h1>
-                <p className='order-item__description'>{film.description}</p>
+                <h1 className='order-item__description-title none'>Описание:</h1>
+                <p className='order-item__description none'>{film.description}</p>
             </div>
             <div className='order-item__price'>
                 <span>{film.price} сом</span>
