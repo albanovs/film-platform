@@ -14,18 +14,20 @@ export const FilmPage = () => {
 
     return (
         <div className='film-page'>
-            <h1 className='film-page__title'>{film.title }</h1>
+            <h1 className='film-page__title'>{film.title}</h1>
             <div className='film-page__content'>
                 <div className='film-page__left'>
-                    <iframe width='90%' height='400px' src={film.video} title='Youtube video Player' frameBorder='0'></iframe>
+                    <iframe src={film.video} title='Youtube video Player' frameBorder='0'></iframe>
                 </div>
                 <div className='film-page__right'>
-                    <FilmCover className='class-for-responsive' image={film.image}/>
+                    <div className='class-for-responsive'>
+                        <FilmCover image={film.image} />
+                    </div>
                     <p>{film.description}</p>
                     <p className='secondary-text'>Популярные метки этого продукта:</p>
-                    {film.genres.map(genre => <FilmGenre genre={genre} key={genre}/>)}
+                    {film.genres.map(genre => <FilmGenre genre={genre} key={genre} />)}
                     <div className='film-page__buy-film'>
-                        <FilmBuy film={film}/>
+                        <FilmBuy film={film} />
                     </div>
                 </div>
             </div>
