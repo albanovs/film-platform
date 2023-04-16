@@ -7,7 +7,7 @@ import './cart-menu.css'
 export const CartMenu = ({ items, onClick }) => {
     return (
         <div className='cart-menu'>
-            <div className='cartMenu-filmList'>
+            <div className='cart-menu__film-list'>
                 {
                     items.length > 0 ? items.map(film =>
                         <CartItem key={film.title}
@@ -22,8 +22,8 @@ export const CartMenu = ({ items, onClick }) => {
             </div>
             {
                 items.length > 0 ?
-                    <div className='cartModal'>
-                        <div className='cartModal-totalPrice'>
+                    <div className='cart-modal'>
+                        <div className='cart-modal__total-price'>
                             <span>Итого:</span>
                             <span>{calcTotalPrice(items)} сом</span>
                         </div>

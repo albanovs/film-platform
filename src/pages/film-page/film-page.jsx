@@ -20,7 +20,7 @@ export const FilmPage = () => {
                     <iframe width='90%' height='400px' src={film.video} title='Youtube video Player' frameBorder='0'></iframe>
                 </div>
                 <div className='film-page__right'>
-                    <FilmCover image={film.image}/>
+                    <FilmCover className='class-for-responsive' image={film.image}/>
                     <p>{film.description}</p>
                     <p className='secondary-text'>Популярные метки этого продукта:</p>
                     {film.genres.map(genre => <FilmGenre genre={genre} key={genre}/>)}
