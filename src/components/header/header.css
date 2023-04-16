@@ -17,3 +17,9 @@
     font-size: 24px;
     font-weight: bold;
 }
+
+@media (max-width:390px) {
+    .header{
+        padding: 0 15px;
+    }
+}
