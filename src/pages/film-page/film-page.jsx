@@ -13,7 +13,7 @@ export const FilmPage = () => {
     console.log(film);
 
     return (
-        <div className='film-page'>
+        <div className='film-page page'>
             <h1 className='film-page__title'>{film.title}</h1>
             <div className='film-page__content'>
                 <div className='film-page__left'>

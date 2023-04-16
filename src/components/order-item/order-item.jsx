@@ -14,14 +14,22 @@ export const OrderItem = ({ film }) => {
     return (
         <div className='order-item'>
             <div className='order-item__cover'>
-                <FilmCover image={film.image} />
+                <img className='order-item__image' src={film.image} alt="" />
             </div>
             <div className='order-item__title'>
-                <span>{film.title}</span>
+                <span class>{film.title}</span>
+                <div>
+                    <span className='order-item__description-title'>Жанр: </span>
+                    <span className='order-item__description'>{film.genres}</span>
+                </div>
+                <h1 className='order-item__description-title'>Описание:</h1>
+                <p className='order-item__description'>{film.description}</p>
             </div>
             <div className='order-item__price'>
                 <span>{film.price} сом</span>
-                <RiDeleteBin2Line className='delete-icon' onClick={handleClick} />
+                <div>
+                    <RiDeleteBin2Line className='delete-icon' onClick={handleClick} />
+                </div>
             </div>
         </div>
     )

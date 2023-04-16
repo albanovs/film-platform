@@ -2,3 +2,7 @@
     margin-left: 6px;
     cursor: pointer;
 }
+
+.order-item__image{
+    width: 300px;
+}

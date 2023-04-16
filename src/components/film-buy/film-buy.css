@@ -1,3 +1,10 @@
 .filmBuy-price {
     margin-right: 5px;
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    padding: 0 10px 0 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

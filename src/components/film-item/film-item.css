@@ -1,14 +1,16 @@
 .film-item {
     text-decoration: none;
     color: white;
-    width: 320px;
+    width: 280px;
     height: 300px;
     background-color: rgb(36, 37, 41);
     border-radius: 9px;
     cursor: pointer;
     position: relative;
     margin-bottom: 30px;
-    margin-right: 50px;
+    margin-right: 5px;
+    margin-left: 40px;
+    border: 0.5px solid;
 }
 
 .details {
@@ -17,7 +19,7 @@
 
 .film-title {
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .film-genre {

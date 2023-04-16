@@ -15,7 +15,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.cart-modal__total-price{
+.cart-modal__total-price {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -28,9 +28,5 @@
         position: fixed;
         left: 10px;
         top: 50px;
-    }
-    .close-btn{
-        float: right;
-        text-decoration: underline;
     }
 }

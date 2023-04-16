@@ -10,7 +10,7 @@ const ITEMS = [
     {
         image: cover1,
         title: 'Мстители: Война бесконечности',
-        genres: ['Боевик', 'Приключения', 'Фэнтези'],
+        genres: ['Боевик ', 'Приключения ', 'Фэнтези '],
         video: 'https://www.youtube.com/embed/FeJKZMFJ7NA',
         price: 340,
         id: 1,
@@ -19,7 +19,7 @@ const ITEMS = [
     {
         image: cover2,
         title: 'Аватар',
-        genres: ['Фантастика', 'Боевик', 'Драмы'],
+        genres: ['Фантастика ', 'Боевик ', 'Драмы '],
         video: 'https://youtube.com/embed/4HFlPcX2HFo',
         price: 300,
         id: 2,
@@ -28,7 +28,7 @@ const ITEMS = [
     {
         image: cover3,
         title: 'Курманжан датка',
-        genres: ['Драма', 'Исторический фильм', 'Биография'],
+        genres: ['Драма ', 'Исторический фильм ', 'Биография '],
         video: 'https://youtube.com/embed/WSPekXPtPNc',
         price: 510,
         id: 3,
@@ -37,7 +37,7 @@ const ITEMS = [
     {
         image: cover4,
         title: 'Паразиты',
-        genres: ['Триллер', 'драма', 'Комедия'],
+        genres: ['Триллер ', 'драма ', 'Комедия '],
         video: 'https://www.youtube.com/embed/GGnM74uxjlo',
         price: 480,
         id: 4,

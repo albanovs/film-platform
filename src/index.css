@@ -1,13 +1,15 @@
-body{
-    background-color: rgb(25, 26, 28);
-    /* background-image: url(./fim-covers/infinityVar.jpg);
-    background-size: cover; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App{
-    max-width: 1180px;
+body {
+    background-color: rgb(25, 26, 28);
+}
+
+.App {
     margin: 0 auto;
-    padding: 0 40px;
     color: white;
 }
 
@@ -27,6 +29,7 @@ a {
         padding: 0;
         box-sizing: border-box;
     }
+
     .App {
         padding: 0;
     }
