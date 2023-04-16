@@ -18,17 +18,15 @@ export const FilmItem = ({ film }) => {
     }
 
     return (
-        <div className='responsive-item'>
-            <div className='film-item' onClick={handleClick}>
-                <FilmCover image={film.image} />
-                <div className='details'>
-                    <span className='film-title'>{film.title}</span>
-                    <div className='film-genre'>
-                        {film.genres.map((genre) => <FilmGenre genre={genre} key={genre} />)}
-                    </div>
-                    <div className='filmItem-buy'>
-                        <FilmBuy film={film} />
-                    </div>
+        <div className='film-item' onClick={handleClick}>
+            <FilmCover image={film.image} />
+            <div className='details'>
+                <span className='film-title'>{film.title}</span>
+                <div className='film-genre'>
+                    {film.genres.map((genre) => <FilmGenre genre={genre} key={genre} />)}
+                </div>
+                <div className='filmItem-buy'>
+                    <FilmBuy film={film} />
                 </div>
             </div>
         </div>

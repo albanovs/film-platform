@@ -38,9 +38,7 @@
 }
 
 @media (max-width: 420px) {
-    .responsive-item {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .film-item {
+        margin-left: 25px;
     }
 }
