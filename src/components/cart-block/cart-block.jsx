@@ -22,7 +22,7 @@ export const CartBlock = () => {
         <div className="cart-block">
             <ItemsInCart count={items.length} />
             <BiCartAlt size={25} className='cartBlock-icon' onClick={() => setIsCartMenuVisible(!isCartMenuVisible)} />
-            {totalPrice > 0 ? <span className="cart-block__total-price">{totalPrice} сом</span> : null}
+            {/* {totalPrice > 0 ? <span className="cart-block__total-price">{totalPrice} сом</span> : null} */}
             {isCartMenuVisible && <CartMenu items={items} onClick={handleGoToOrderClick} />}
         </div>
     )
