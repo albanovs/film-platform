@@ -36,3 +36,11 @@
     right: 0;
     bottom: -12px;
 }
+
+@media (max-width: 420px) {
+    .responsive-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
