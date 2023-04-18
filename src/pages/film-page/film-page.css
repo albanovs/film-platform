@@ -39,6 +39,13 @@ iframe {
         display: flex;
         flex-direction: column;
     }
+    .film-page__content p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .film-page__title{
+        font-size: 18px;
+    }
 
     iframe {
         width: 90%;

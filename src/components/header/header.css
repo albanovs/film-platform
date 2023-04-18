@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     width: 400px;
-    font-size: 20px;
+    font-size:16px;
     /* margin-top: 25px; */
 }
 
@@ -74,7 +74,7 @@
 
 .input-search:focus{
     border: 1px solid rgb(197, 43, 136);
-    transition: .3s ease;
+    transition: 3s ease;
 }
 
 @media (max-width: 900px) {
