@@ -32,9 +32,10 @@ export const Header = () => {
                     <FaTimes size={20} />
                 </button>
             </div>
-            <div className="search-btn"><FiSearch size={20} /></div>
             <div className="card-btn-wrapper">
-                <CartBlock />
+                <input className="input-search" type="search" placeholder="Введите запрос"/>
+                <FiSearch className="search-btn" size={20} />
+                <CartBlock className="basket-btn" />
             </div>
         </div>
     )
