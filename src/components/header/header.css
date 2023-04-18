@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     width: 400px;
-    font-size:16px;
+    font-size: 16px;
     /* margin-top: 25px; */
 }
 
@@ -35,7 +35,8 @@
     color: rgb(197, 43, 136);
 }
 
-.navLink,.search-btn {
+.navLink,
+.search-btn {
     transition: 0.7s ease;
 }
 
@@ -72,7 +73,7 @@
     padding-left: 20px;
 }
 
-.input-search:focus{
+.input-search:focus {
     border: 1px solid rgb(197, 43, 136);
     transition: 3s ease;
 }
@@ -128,13 +129,14 @@
 
 @media (max-width:420px) {
 
-    .store-title{
+    .store-title {
         display: none;
     }
 
-    .search-btn{
+    .search-btn {
         margin-right: 15px;
     }
+
     .header {
         height: 60px;
         padding: 0 15px;
@@ -152,5 +154,14 @@
     .nav-menu ul {
         text-align: start;
         width: 100%;
+    }
+
+    .input-search{
+        color: black;
+        background: white;
+        width: 190px;
+    }
+    .view-search {
+        display: block;
     }
 }

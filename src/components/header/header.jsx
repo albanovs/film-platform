@@ -9,11 +9,18 @@ import { useState } from "react";
 export const Header = () => {
 
     const [show, setShow] = useState(false)
+    const [viewSearch, setViewSearch] = useState(false)
 
     const showNavBar = () => {
         setShow(show => !show)
     }
 
+
+    const viewsSearch = () => {
+        setViewSearch(viewSearch => !viewSearch)
+    }
+
+    let toggleSeatch = viewSearch ? 'view-search' : ''
     let toggleClass = show ? 'resp_nav' : ''
 
     return (
@@ -33,8 +40,8 @@ export const Header = () => {
                 </button>
             </div>
             <div className="card-btn-wrapper">
-                <input className="input-search" type="search" placeholder="Введите запрос"/>
-                <FiSearch className="search-btn" size={20} />
+                <input className={`input-search ${toggleSeatch}`} type="search" placeholder="Введите запрос" />
+                <FiSearch className="search-btn" size={20} onClick={viewsSearch} />
                 <CartBlock className="basket-btn" />
             </div>
         </div>
