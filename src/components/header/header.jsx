@@ -2,19 +2,19 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { CartBlock } from "../cart-block/cart-block";
 import { FiSearch } from 'react-icons/fi'
-import { FaTimes, FaBars } from 'react-icons/fa'
+import { FaTimes, FaBars } from 'react-icons/fa';
 import './header.css';
 import { useState } from "react";
 
-export const Header = () => {
+export const Header = ({ data }) => {
 
     const [show, setShow] = useState(false)
     const [viewSearch, setViewSearch] = useState(false)
+    const [search, setSearch] = useState('')
 
     const showNavBar = () => {
         setShow(show => !show)
     }
-
 
     const viewsSearch = () => {
         setViewSearch(viewSearch => !viewSearch)
@@ -40,7 +40,27 @@ export const Header = () => {
                 </button>
             </div>
             <div className="card-btn-wrapper">
-                <input className={`input-search ${toggleSeatch}`} type="search" placeholder="Введите запрос" />
+                <div className="search-block">
+                    <input className={`input-search ${toggleSeatch}`} type="search" placeholder="Введите запрос" onChange={(e) => setSearch(e.target.value)} />
+
+                    {data.filter((item) => {
+                        return search.toLowerCase() === ''
+                            ? item
+                            : item.title.toLowerCase().includes(search)
+                    }).map((film) => {
+                        return search && <div className="input-values"> <NavLink to={film.nav} className="search-result" key={film.id}>
+                            <div>
+                                <img width={100} src={film.image} alt="" />
+                            </div>
+                            <div className="search-content">
+                                <div className="search-title">{film.title}</div>
+                                <div className="search-genre">{film.genres}</div>
+                            </div>
+                        </NavLink>
+                        </div>
+                    })}
+
+                </div>
                 <FiSearch className="search-btn" size={20} onClick={viewsSearch} />
                 <CartBlock className="basket-btn" />
             </div>
