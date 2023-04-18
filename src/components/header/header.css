@@ -30,8 +30,7 @@
 
 .navLink:hover,
 .navLink:active,
-.navLink:focus,
-.search-btn:hover {
+.navLink:focus {
     color: rgb(197, 43, 136);
 }
 
