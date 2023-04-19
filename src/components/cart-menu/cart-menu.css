@@ -28,5 +28,7 @@
         position: fixed;
         left: 10px;
         top: 50px;
+        background: rgb(6, 6, 39);
+        border: 1px solid rgb(128, 128, 128);
     }
 }

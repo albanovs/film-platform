@@ -48,7 +48,7 @@ export const Header = ({ data }) => {
                             ? item
                             : item.title.toLowerCase().includes(search)
                     }).map((film) => {
-                        return search && <div className="input-values"> <NavLink to={film.nav} className="search-result" key={film.id}>
+                        return search && <div className="input-values"> <NavLink className="search-result" key={film.id}>
                             <div>
                                 <img width={100} src={film.image} alt="" />
                             </div>

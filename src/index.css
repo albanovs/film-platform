@@ -6,7 +6,9 @@
 }
 
 body {
-    background-color: rgb(25, 26, 28);
+    /* background-color: rgb(25, 26, 28); */
+    background: url(./fim-covers/backgroud.jpg);
+    background-size: cover;
 }
 
 .App {
@@ -21,5 +23,12 @@ a {
 
 .secondary-text {
     color: rgb(83, 83, 83);
+}
+
+@media (max-width: 420px) {
+    body{
+        background: url(./fim-covers/background-phone.webp);
+        backdrop-filter: blur(20px);
+    }
 }
 

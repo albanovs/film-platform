@@ -30,4 +30,7 @@
     .cart-image {
         margin-right: 10px;
     }
+    .btnDelete{
+        font-size: 20px;
+    }
 }

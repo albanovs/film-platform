@@ -6,6 +6,7 @@
     padding: 0 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid rgb(107, 107, 107);
+    /* backdrop-filter: blur(30px); */
 }
 
 .wrapper {
@@ -70,6 +71,7 @@
     border-radius: 20px;
     margin: 0 10px 0 10px;
     padding-left: 20px;
+    z-index: 50;
 }
 
 .input-search:focus {

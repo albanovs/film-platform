@@ -19,9 +19,9 @@ export const OrderPage = () => {
             </div>
             <div className='order-page__right'>
                 <span>
-                    {items.length} {items.length == 1 ? 'товар' : 'товаров'} на сумму {calcTotalPrice(items)} сом
+                    {items.length} {items.length === 1 ? 'товар' : 'товаров'} на сумму {calcTotalPrice(items)} сом
                 </span>
-                 <div className='buy-btn'>Купить</div>
+                 <button className='buy-btn'>Купить</button>
             </div>
         </div>
     )

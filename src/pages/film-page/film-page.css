@@ -72,4 +72,7 @@ iframe {
     .film-page__buy-film {
         margin-bottom: 50px;
     }
+    .secondary-text{
+        color: rgb(138, 138, 138);
+    }
 }
