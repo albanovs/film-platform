@@ -3,6 +3,30 @@
     flex-wrap: wrap;
 }
 
-.global-title{
+.global-margin{
     margin: 0 30px 30px 30px;
+}
+
+.section-one {
+    margin-top: 50px;
+}
+
+.news{
+    margin-bottom: 50px;
+}
+.news::after {
+    content: 'news';
+    width: 90px;
+    display: inline-block;
+    background-color: red;
+    font-size: 25px;
+    border-top-right-radius:50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 10px;
+}
+
+.section-one__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }

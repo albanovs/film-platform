@@ -1,0 +1,33 @@
+.film-section{
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.film-section__details{
+    margin-left: 20px;
+    width: 400px;
+}
+
+.section-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: crimson;
+    font-weight: 700;
+}
+
+.section-title__des{
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+    color: crimson;
+    font-weight: 700;
+}
+
+.film-section__buy{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
