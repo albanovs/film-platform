@@ -28,7 +28,7 @@ a {
 @media (max-width: 420px) {
     body{
         background: url(./fim-covers/background-phone.webp);
-        backdrop-filter: blur(20px);
+        /* backdrop-filter: blur(20px); */
     }
 }
 

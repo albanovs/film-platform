@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { FilmBuy } from '../film-buy'
@@ -16,7 +16,7 @@ export const FilmItemSection = ({ film }) => {
     }
     return (
         <div className='film-section'>
-            <div onClick={handleClick}><img width={200} height={300} src={film.image_smoll} alt='cover'/></div>
+            <div onClick={handleClick}><img className='film-section__img' src={film.image_smoll} alt='cover'/></div>
             <div className='film-section__details'>
                 <div><span className='section-title'>Название: </span> {film.title}</div>
                 <div><span className='section-title'>год: </span> {film.year}</div>

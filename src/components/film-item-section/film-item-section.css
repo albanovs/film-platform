@@ -1,13 +1,16 @@
-.film-section{
+.film-section {
     display: flex;
     position: relative;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
-.film-section__details{
+.film-section__details {
     margin-left: 20px;
-    width: 400px;
+    /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section-title {
@@ -18,7 +21,7 @@
     font-weight: 700;
 }
 
-.section-title__des{
+.section-title__des {
     display: inline-block;
     font-size: 18px;
     margin-top: 10px;
@@ -26,8 +29,27 @@
     font-weight: 700;
 }
 
-.film-section__buy{
+.film-section__buy {
     position: absolute;
     bottom: 10px;
     right: 0;
+}
+
+.film-section__img {
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    border: 0.5px solid #ccc;
+}
+
+@media (max-width: 420px) {
+    .film-section {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .film-section__details{
+        margin-left: 0;
+        width: 320px;
+    }
+    
 }
